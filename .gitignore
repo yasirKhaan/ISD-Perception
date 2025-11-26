@@ -1,0 +1,91 @@
+# Python gitignore — common patterns for Python projects
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+__pypackages__/
+.python-version
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.iml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Profiling / logs / temp
+.prof
+*.log
+local_settings.py
+
+# Environment / secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Dataset / large binaries (project-specific)
+processed_dataset/
+dataset/
+# Large medical/image files
+*.dcm
+*.nii
+*.nii.gz
+*.png
+*.jpg
+*.jpeg
+
+# Backup and swap files
+*~
+*.bak
+*.swp
