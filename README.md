@@ -1,6 +1,6 @@
 # MURA Dataset — End-to-End Data Processing Pipeline
 
-# Dataset Link: https://stanfordaimi.azurewebsites.net/datasets/3e00d84b-d86e-4fed-b2a4-bfe3effd661b
+## Dataset Link: https://stanfordaimi.azurewebsites.net/datasets/3e00d84b-d86e-4fed-b2a4-bfe3effd661b
 
 A concise, well-documented pipeline to extract metadata, preprocess (resize) MURA images once, persist cleaned images on disk, and provide a lightweight dataset loader that performs final normalization at training time.
 
