@@ -178,6 +178,3 @@ This three-stage process ensures that the most time-consuming step (resizing/cle
 - It is recommended to use a virtual environment to manage Python dependencies for this project.
 - The training script (`train.py`) is not provided in this repository. This is a placeholder for integrating the actual model training code.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
