@@ -1,5 +1,7 @@
 # MURA Dataset — End-to-End Data Processing Pipeline
 
+# Dataset Link: https://stanfordaimi.azurewebsites.net/datasets/3e00d84b-d86e-4fed-b2a4-bfe3effd661b
+
 A concise, well-documented pipeline to extract metadata, preprocess (resize) MURA images once, persist cleaned images on disk, and provide a lightweight dataset loader that performs final normalization at training time.
 
 ## Table of Contents
@@ -50,7 +52,7 @@ This repository implements a three-stage data pipeline tailored for the MURA mus
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/mura_dataset_pipeline.git
+   git clone https://github.com/yasirKhaan/mura_dataset_pipeline.git
    cd mura_dataset_pipeline
    ```
 2. **Set up a virtual environment (recommended):**
@@ -72,10 +74,6 @@ This repository implements a three-stage data pipeline tailored for the MURA mus
 - To only preprocess and save the data (Stage 2):
   ```bash
   python3 perception.py --preprocess_only
-  ```
-- To run the training loop (assuming a separate training script is provided):
-  ```bash
-  python3 train.py
   ```
 
 ## Project Layout
@@ -159,7 +157,7 @@ In this final stage, the `MURADataset` class and the subsequent training pipelin
 
 This three-stage process ensures that the most time-consuming step (resizing/cleaning) is performed offline, while the final, necessary normalization is performed efficiently during the training run.
 
-## API / Key Functions
+## Key Functions
 
 - `get_mura_metadata(csv_file: str) -> List[Tuple[str, int]]`: Extracts metadata from the given CSV file and returns a list of tuples containing image file paths and binary labels.
 
